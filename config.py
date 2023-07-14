@@ -10,7 +10,7 @@ from logging.handlers import RotatingFileHandler
 
 
 #Bot token @Botfather
-TG_BOT_TOKEN = os.environ.get("TG_BOT_TOKEN", "5739797236:AAGDMiY0WV0S_UFHYY1WIybXeE36Ksrr1aM")
+TG_BOT_TOKEN = os.environ.get("TG_BOT_TOKEN", "6309533502:AAHllnxV02pDbf4K7yQywOyspVsKOjym4HE")
 
 #Your API ID from my.telegram.org
 APP_ID = int(os.environ.get("APP_ID", "20421248"))
@@ -40,7 +40,7 @@ TG_BOT_WORKERS = int(os.environ.get("TG_BOT_WORKERS", "4"))
 START_MSG = os.environ.get("START_MESSAGE", "Hello {first}\n\nI can store private files of @Anime_Guardians Channel and other users can access it from special link.")
 try:
     ADMINS=[]
-    for x in (os.environ.get("ADMINS", "6158987073 2136843654 5102402876").split()):
+    for x in (os.environ.get("ADMINS", "6158987073 2136843654 5102402876 1537176737").split()):
         ADMINS.append(int(x))
 except ValueError:
         raise Exception("Your Admins list does not contain valid integers.")
